@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemanth T S - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="Resources/Images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Particles.js Library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <canvas id="matrix-canvas"></canvas>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <div class="logo">
+                <span>HTS</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="greeting">Hello, I'm</p>
+                <h1 class="glitch">Hemanth T S</h1>
+                <div class="typing-container">
+                    <span class="hero-subtitle typing"></span>
+                </div>
+                <p class="hero-desc">Enthusiastic Data Analyst and AI Specialist with expertise in computer vision and AI model integration for real-world applications. Proficient in leveraging advanced AI techniques to enhance decision-making and automate tasks. Adept at collaborating with teams to deliver impactful solutions that bridge data science, AI, and business needs, with a proven ability to analyze complex data and drive innovation.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/" target="_blank" class="social-link"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank" class="social-link"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="Resources/Hemanth_Resume.pdf" target="_blank" class="social-link"
+                        style="border-radius: 30px; width: 8em;"><i class="fa-solid fa-file-arrow-down"></i>
+                        <pre>   Resume</pre>
+                    </a>
+                </div>
+                <div class="retro-terminal">
+                    <pre>➤ Junior AI Analyst with expertise in computer vision
+➤ Tech stack: Python, PyTorch, TensorFlow, SQL, NVIDIA DeepStream SDK
+➤ Currently exploring: LangChain, CUDA optimization, and agentive AI systems</pre>
+                    <span class="cursor"></span>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-window">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="window-title">ai_specialist.py</span>
+                    </div>
+                    <div class="code-content">
+                        <pre><code class="language-python">
+class AISpecialist:
+    def __init__(self):
+        self.name = "Hemanth T S"
+        self.role = "Junior AI Analyst"
+        self.skills = [
+            "Computer Vision",
+            "Deep Learning",
+            "Model Deployment",
+            "Autonomous Systems"
+        ]
+        
+    def solve_problems(self, data):
+        insights = self.analyze_data(data)
+        solutions = self.apply_ai_models(insights)
+        return solutions
+        
+    def create_innovation(self):
+        return "Building cutting-edge AI solutions"
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured <span class="title-highlight">Projects</span></h2>
+                <p class="section-subtitle">A collection of AI and computer vision projects showcasing my skills in machine learning, deep learning, and model deployment.</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project -->
+                <div class="project-card">
+                    <img src="Resources/Images/cars.jpg" alt="Advanced Lane Finding" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">Advanced Lane Segmentation</h3>
+                        <p class="project-desc">Developed a computer vision system that accurately identifies lane markings in various lighting and weather conditions using advanced image processing techniques.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Image Processing</span>
+                            <span class="tech-tag">Camera Calibration</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project -->
+                <div class="project-card">
+                    <img src="Resources/Images/objectandpose.png" alt="YOLO Object Detection" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">YOLO Object & Pose Estimation</h3>
+                        <p class="project-desc">Implemented YOLOv8 for real-time object detection and human pose estimation, optimized for edge devices and real-time processing.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">YOLO</span>
+                            <span class="tech-tag">Deep Learning</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Real-time Processing</span>
+                            <span class="tech-tag">Pose Estimation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="Resources/Images/Nvidia_CUDA_Logo.jpg" alt="CUDA Optimization" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">CUDA Optimization Suite</h3>
+                        <p class="project-desc">Developed custom CUDA kernels for accelerating computer vision and deep learning workloads, achieving up to 30x speedup over CPU implementations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">CUDA</span>
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">Parallel Computing</span>
+                            <span class="tech-tag">Performance Optimization</span>
+                            <span class="tech-tag">NVIDIA</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="Resources/Images/multiagentsystems.png" alt="AI Agents" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">Multi-Agent AI System</h3>
+                        <p class="project-desc">Built a framework for autonomous AI agents that collaborate to solve complex tasks through planning, reasoning, and adaptive learning.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">LLMs</span>
+                            <span class="tech-tag">LangChain</span>
+                            <span class="tech-tag">Agent Systems</span>
+                            <span class="tech-tag">Autonomous Decision-Making</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="Resources/Images/livekit.png" alt="Voice Assistant" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">LiveKit Voice Assistant</h3>
+                        <p class="project-desc">Implemented a real-time voice assistant using LiveKit for streaming audio and integrating with AI models for natural language understanding and response generation.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">LiveKit</span>
+                            <span class="tech-tag">WebRTC</span>
+                            <span class="tech-tag">Speech Recognition</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <img src="Resources/Images/customvoice.png" alt="Custom Voice Assistant" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">Custom Voice Assistant</h3>
+                        <p class="project-desc">Built a private voice assistant using Deepgram for accurate speech recognition and Azure Cognitive Services for voice synthesis and natural language processing.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Deepgram</span>
+                            <span class="tech-tag">Azure Cognitive Services</span>
+                            <span class="tech-tag">Text-to-Speech</span>
+                            <span class="tech-tag">Speech-to-Text</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <img src="Resources/Images/gemini.webp" alt="Gemini Multimodal" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">Gemini Multimodal Project</h3>
+                        <p class="project-desc">Leveraged Google's Gemini API to build a multimodal application that processes and understands text, images, and structured data for comprehensive analysis and insights.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Gemini API</span>
+                            <span class="tech-tag">Multimodal AI</span>
+                            <span class="tech-tag">Vision+Language</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Google Cloud</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <img src="Resources/Images/dental.jpg" alt="Dental Radiography" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">Dental Radiography Analysis</h3>
+                        <p class="project-desc">Developed a dental radiography analysis system that automated dental condition detection using YOLO v8, leveraging a dataset of 1000 annotated images.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">YOLO v8</span>
+                            <span class="tech-tag">Medical Image Analysis</span>
+                            <span class="tech-tag">Deep Learning</span>
+                            <span class="tech-tag">Object Detection</span>
+                            <span class="tech-tag">Healthcare AI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="title-highlight">Skills</span></h2>
+                <p class="section-subtitle">A comprehensive overview of my technical skills and expertise in AI, computer vision, and software development.</p>
+            </div>
+
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Programming Languages</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">Python</h4>
+                                <div class="skill-level">
+                                    <div class="skill-progress" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">C++</h4>
+                                <div class="skill-level">
+                                    <div class="skill-progress" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">SQL</h4>
+                                <div class="skill-level">
+                                    <div class="skill-progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">JavaScript</h4>
+                                <div class="skill-level">
+                                    <div class="skill-progress" style="width: 65%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Computer Vision & AI</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">Object Detection (YOLO)</h4>
+                                <div class="skill-level">
+                                    <div class="skill-progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-walking"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">Pose Estimation</h4>
+                                <div class="skill-level">
+                                    <div class="skill-progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">NVIDIA DeepStream SDK</h4>
+                                <div class="skill-level">
+                                    <div class="skill-progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">Large Language Models</h4>
+                                <div class="skill-level">
+                                    <div class="skill-progress" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">Autonomous AI Systems</h4>
+                                <div class="skill-level">
+                                    <div class="skill-progress" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">ML Frameworks & Tools</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">PyTorch</h4>
+                                <div class="skill-level">
+                                    <div class="skill-progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">TensorFlow</h4>
+                                <div class="skill-level">
+                                    <div class="skill-progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">CUDA</h4>
+                                <div class="skill-level">
+                                    <div class="skill-progress" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">OpenCV</h4>
+                                <div class="skill-level">
+                                    <div class="skill-progress" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-link"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">LangChain</h4>
+                                <div class="skill-level">
+                                    <div class="skill-progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional <span class="title-highlight">Certifications</span></h2>
+                <p class="section-subtitle">A collection of professional certifications that demonstrate my expertise
+                    and continuous learning journey.</p>
+            </div>
+            <div class="certification-grid">
+
+                <!-- Certification Card -->
+                <div class="certification-card">
+                    <div class="watermark">IEEE</div>
+                    <div class="certification-header">
+                        <div>
+                            <h3 class="certification-title">2023 ICSCC IEEE Conference</h3>
+                            <div class="certification-desc">Best Paper Award - Smart Computing Track</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="certification-meta">
+                            <span>Issued: 2023</span>
+                        </div>
+                        <a href="#" target="_blank"
+                            class="view-credential"><i class="fas fa-external-link-alt"></i> View Credential</a>
+                    </div>
+                </div>
+
+                <!-- Certification Card -->
+                <div class="certification-card">
+                    <div class="watermark">UDEMY</div>
+                    <div class="certification-header">
+                        <div>
+                            <h3 class="certification-title">Machine Learning A-Z: AI, Python & R</h3>
+                            <div class="certification-desc">Udemy</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="certification-meta">
+                            <span>Issued: 2023</span>
+                        </div>
+                        <a href="#" target="_blank"
+                            class="view-credential"><i class="fas fa-external-link-alt"></i> View Credential</a>
+                    </div>
+                </div>
+
+                <!-- Certification Card -->
+                <div class="certification-card">
+                    <div class="watermark">NVIDIA</div>
+                    <div class="certification-header">
+                        <div>
+                            <h3 class="certification-title">DeepStream SDK Developer</h3>
+                            <div class="certification-desc">NVIDIA AI</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="certification-meta">
+                            <span>Issued: 2023</span>
+                        </div>
+                        <a href="#" target="_blank"
+                            class="view-credential"><i class="fas fa-external-link-alt"></i> View Credential</a>
+                    </div>
+                </div>
+
+                <!-- Certification Card -->
+                <div class="certification-card">
+                    <div class="watermark">PyTorch</div>
+                    <div class="certification-header">
+                        <div>
+                            <h3 class="certification-title">PyTorch for Deep Learning</h3>
+                            <div class="certification-desc">PyTorch</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="certification-meta">
+                            <span>Issued: 2023</span>
+                        </div>
+                        <a href="#" target="_blank"
+                            class="view-credential"><i class="fas fa-external-link-alt"></i> View Credential</a>
+                    </div>
+                </div>
+
+                <!-- Certification Card -->
+                <div class="certification-card">
+                    <div class="watermark">Google</div>
+                    <div class="certification-header">
+                        <div>
+                            <h3 class="certification-title">TensorFlow Developer</h3>
+                            <div class="certification-desc">Google</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="certification-meta">
+                            <span>Issued: 2022</span>
+                        </div>
+                        <a href="#" target="_blank"
+                            class="view-credential"><i class="fas fa-external-link-alt"></i> View Credential</a>
+                    </div>
+                </div>
+
+                <!-- Certification Card -->
+                <div class="certification-card">
+                    <div class="watermark">Coursera</div>
+                    <div class="certification-header">
+                        <div>
+                            <h3 class="certification-title">Computer Vision Specialization</h3>
+                            <div class="certification-desc">Coursera</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="certification-meta">
+                            <span>Issued: 2022</span>
+                        </div>
+                        <a href="#" target="_blank"
+                            class="view-credential"><i class="fas fa-external-link-alt"></i> View Credential</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Work <span class="title-highlight">Experience</span></h2>
+                <p class="section-subtitle">My professional journey and contributions in the field of AI, computer vision, and deep learning.</p>
+            </div>
+            <div class="timeline-container">
+                <!-- Experience 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-period">
+                            <i class="far fa-calendar-alt"></i> October 2024 - Present
+                        </div>
+                        <h3 class="timeline-title">Junior AI Analyst - Fulltime</h3>
+                        <h4 class="timeline-subtitle">10xDS - Exponential Digital Solutions</h4>
+                        <p class="timeline-desc">
+                            • Effectively utilized NVIDIA DeepStream SDK with Python bindings to deploy a fully-fledged project.<br>
+                            • Worked with various Large Language Models (LLMs) and the LangChain framework for integrating AI-driven conversational capabilities into applications.<br>
+                            • Developed agentic AI solutions for diverse applications, enhancing autonomous decision-making.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tech-tag">NVIDIA DeepStream SDK</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">LLMs</span>
+                            <span class="tech-tag">LangChain</span>
+                            <span class="tech-tag">Agentic AI</span>
+                            <span class="tech-tag">AI Systems</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-period">
+                            <i class="far fa-calendar-alt"></i> March - October 2024
+                        </div>
+                        <h3 class="timeline-title">AI Internship</h3>
+                        <h4 class="timeline-subtitle">10xDS - Exponential Digital Solutions</h4>
+                        <p class="timeline-desc">
+                            • Developed and deployed computer vision systems utilizing object detection and pose estimation techniques for real-time monitoring applications.<br>
+                            • Applied advanced machine learning models, including LSTM networks, to enhance predictive analytics in dynamic environments.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">Object Detection</span>
+                            <span class="tech-tag">Pose Estimation</span>
+                            <span class="tech-tag">LSTM</span>
+                            <span class="tech-tag">Real-time Monitoring</span>
+                            <span class="tech-tag">ML Models</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-period">
+                            <i class="far fa-calendar-alt"></i> July - Oct 2023
+                        </div>
+                        <h3 class="timeline-title">Internship</h3>
+                        <h4 class="timeline-subtitle">Fingent Global Solutions Private Limited</h4>
+                        <p class="timeline-desc">
+                            • Developed e-commerce websites with admin dashboards, cart functionality, and Razorpay integration, using Laravel, Django, and ReactJS with ASP.NET Core 6.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">ReactJS</span>
+                            <span class="tech-tag">ASP.NET Core 6</span>
+                            <span class="tech-tag">Razorpay</span>
+                            <span class="tech-tag">E-commerce</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="title-highlight">Education</span></h2>
+                <p class="section-subtitle">My academic journey and qualifications in Electronics, Communications, and Computer Science.</p>
+            </div>
+            <div class="timeline-container">
+                <!-- Education 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-period">
+                            <i class="far fa-calendar-alt"></i> Jul 2019 - Dec 2023
+                        </div>
+                        <h3 class="timeline-title">Bachelor of Technology in Electronics & Communications</h3>
+                        <h4 class="timeline-subtitle">APJ Abdul Kalam Technological University, Kerala, India</h4>
+                        <p class="timeline-desc">Completed my bachelor's degree in Electronics and Communications with a focus on practical applications in AI and computer vision systems.</p>
+                        <p class="timeline-desc" style="color: white;">CGPA: 6.65</p>
+                        <div class="timeline-tags">
+                            <span class="tech-tag">Electronics</span>
+                            <span class="tech-tag">Communications</span>
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">AI Systems</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-period">
+                            <i class="far fa-calendar-alt"></i> Apr 2017 - Mar 2019
+                        </div>
+                        <h3 class="timeline-title">Higher Secondary Education (Computer Science)</h3>
+                        <h4 class="timeline-subtitle">SNMHSS Moothakunnam</h4>
+                        <p class="timeline-desc">Completed higher secondary education with a specialization in Computer Science, focusing on programming fundamentals and algorithms.</p>
+                        <p class="timeline-desc" style="color: white;">Percentage: 87%</p>
+                        <div class="timeline-tags">
+                            <span class="tech-tag">Computer Science</span>
+                            <span class="tech-tag">Programming</span>
+                            <span class="tech-tag">Algorithms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-period">
+                            <i class="far fa-calendar-alt"></i> Jun 2016 - March 2017
+                        </div>
+                        <h3 class="timeline-title">Secondary Education</h3>
+                        <h4 class="timeline-subtitle">SNMHSS Moothakunnam</h4>
+                        <p class="timeline-desc">Completed secondary education with a strong foundation in mathematics and science.</p>
+                        <p class="timeline-desc" style="color: white;">Percentage: 96%</p>
+                        <div class="timeline-tags">
+                            <span class="tech-tag">Mathematics</span>
+                            <span class="tech-tag">Science</span>
+                            <span class="tech-tag">General Education</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get in <span class="title-highlight">Touch</span></h2>
+                <p class="section-subtitle">Interested in working together or discussing AI and computer vision projects? Feel free to reach out.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <a href="mailto:03hemanthsunil@gmail.com" class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>03hemanthsunil@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <a href="tel:+917736224711" class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>+91 7736224711</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <p>Kerala, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Availability</h4>
+                            <p>Open for full-time opportunities and collaborations</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <img src="Resources/Images/map-image.png"></img>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <p>&copy; 2024 Hemanth T S. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+
+</html>
